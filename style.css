@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+    font-size: large;
+    scroll-behavior:smooth;
+    list-style: none;
+}
+body{
+    background: linear-gradient(to right, #232526, #414345);
+    color: white;
+}
+
+.navbar{
+    background: linear-gradient(to right, #2c2f33, #484b50);
+    color: white;
+    padding: 10px;
+}
+
+.navbar ul{
+    list-style: none;
+    display:flex;
+    justify-content: space-around;
+    align-items:center;
+}
+
+.navbar ul li{
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+
+}
+
+.navbar ul li:hover{
+    border-radius: 5px;
+
+
+}
+
+.navbar ul  a{
+    text-decoration: none;
+    color: white;
+}
+
+.navbar ul li:hover a{
+    color: rgb(194, 192, 194);
+}
+
+header{
+    color: white;
+    padding: 20px;
+    text-align : center;
+}
+
+hr{
+    opacity: 0.2;
+    margin: 20px 0;
+}   
+
+
+.about {
+    padding: 40px;
+
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap; /* علشان يكون ريسبونسيف */
+}
+
+.about .text {
+    flex: 1;
+    min-width: 250px;
+}
+
+.about .image {
+    flex: 1;
+    min-width: 250px;
+    text-align: center;
+}
+
+.about .image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 150px;;
+    transition: transform 0.3s ease;
+}
+.about .image img:hover {
+    transform: scale(1.1);
+}
+.MySkills {
+    padding: 20px;;
+    text-align: center;
+    font-weight: bold;
+    margin: 50px 0;
+}
+
+.MySkills h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.MySkills ul {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 60px;
+}
+
+.MySkills li {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+
+.MySkills li:hover {
+    transform: scale(1.1);
+}
+
+.icon {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 17px;
+}
+
+
+.Contact{
+    padding: 25px;
+    text-align: center;
+}
+
+.Contact h2 {
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+.Contact form{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap: 15px;
+    transition: transform 0.3s ease;
+
+}
+.Contact form:hover{
+    transform: scale(1.05);
+}
+
+.Contact form input{
+    padding: 6px;
+    border-radius: 20px;
+    border: none;
+    background-color: #4b4e52;
+    color: white;
+    width: 300px;
+}
+
+.Contact form textarea{
+    padding: 6px;
+    border-radius: 25px;
+    border: none;
+    background-color: #4b4e52;
+    color: white;
+    width: 300px;
+    height: 100px;
+}
+.Contact form button{
+    padding: 6px;
+    border-radius: 20px;
+    border: none;
+    background-color: #7289da;
+    color: white;
+    width: 150px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+}
+.Contact form button:hover{
+    background-color: #242d42;
+}
+
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #2c2f33;
+    color: white;
+    font-weight: bold;
+}
+
+footer ul{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+    justify-items: center;
+}
+.social-media{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+footer ul li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+footer ul li:hover{
+    transform: scale(1.1);
+}
+
+footer p{
+    margin: 0;
+    font-size: 14px;
+    text-align:end;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction:row;
+        align-items:center;
+    }
+    .navbar ul li {
+        width: 100%;
+        text-align: center;
+    }
+}
